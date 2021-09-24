@@ -229,4 +229,39 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log(`Someone else should drive`)
 }
 
+
+
+const day = `saturday`;
+
+switch (day) {
+    case `monday`:
+        console.log(`Plan course structure`);
+        console.log(`go to coding meetup`);
+        break;
+    case `tuesday`:
+        console.log(`Prepare theory videos.`);
+        break;
+    case `wednesday`:
+        console.log(`record videos`);
+        break;
+    case `friday`:
+        console.log(`write code examples`);
+        break;
+    case `saturday`:
+    case `sunday`:
+        console.log(`enjoy the weekend`);
+        break;
+    default:
+        console.log(`Not a valid day`);
+}
+
+
+
+const age = 23;
+
+const drink = age >= 18 ?  `wine` : `water`;
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ?  `wine` : `water`}`);
+
 */

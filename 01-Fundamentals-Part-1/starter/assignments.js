@@ -2,6 +2,7 @@
 let country = "United States";
 const continent = "North America";
 let populationUnitedStates = 332;
+let language = `English`;
 /*
 console.log(country);
 console.log(continent);
@@ -51,3 +52,24 @@ if (numNeighbors === 1) {
 }
 
 */
+
+
+switch (language) {
+    case `Mandarin`:
+        console.log(`Most native speakers`);
+        break;
+    case `Spanish`:
+        console.log(`2nd largest number of native speakers`);
+        break;
+    case `English`:
+        console.log(`3rd largest number of native speakers`);
+        break;
+    case `Hindi`:
+        console.log(`4th largest numbers of native speakers`);
+        break;
+    case `Arabic`:
+        console.log(`5th largest number of native speakers`);
+        break;
+    default:
+        console.log(`Also a great language`)
+}

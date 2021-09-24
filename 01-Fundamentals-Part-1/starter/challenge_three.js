@@ -9,4 +9,3 @@ if (dolphinsAverage >= 100 && dolphinsAverage > koalasAverage) {
     console.log(`It's a tie!`)
 } else {
     console.log(`Nobody wins!`)
-}
