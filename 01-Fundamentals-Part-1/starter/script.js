@@ -156,4 +156,77 @@ if (birthYear <= 2000) {
 
 console.log(century);
 
+
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(`Jonas`));
+console.log(Boolean({}));
+console.log(Boolean(``));
+
+const money = 100;
+
+if (money) {
+    console.log(`Don't spend it all ;)`)
+} else {
+    console.log(`You should get a job.`)
+}
+
+let height = 0;
+
+if (height) {
+    console.log(`Yay! height is defined!`)
+} else {
+    console.log(`Height is UNDEFINED`)
+};
+
+
+const age = `18`
+
+if (age === 18 ) console.log (`You just became an adult! strict`);
+// best to use strice operator
+
+if (age == 18 ) console.log (`You just became an adult! loose`);
+
+let favorite = Number(prompt(`What's your favorite number?`));
+ 
+console.log(favorite);
+
+if (favorite == 23) {
+    console.log(`Cool! 23 is an awesome number`);
+} else if (favorite === 7) {
+    console.log(`7 is a cool number!`);
+} else {
+    console.log(`NOT THE RIGHT NUMBER!`);
+}
+
+if (favorite !== 23) {
+    console.log(`Why not 23?`);
+}
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log(`Sarah is able to drive`)
+// } else {
+//     console.log(`Someone else should drive`)
+// }
+
+const isTired = false;
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log(`Sarah is able to drive`)
+} else {
+    console.log(`Someone else should drive`)
+}
+
 */
