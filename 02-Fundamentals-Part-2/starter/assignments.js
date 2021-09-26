@@ -43,7 +43,7 @@ const describePopulation = (country, population) => {
 
 console.log(describePopulation(`UnitedStates`, 331));
 
-*/
+
 const populationWorld = 7900
 const populations = [331, 10, 1441, 7];
 
@@ -63,3 +63,36 @@ const percentages = [
 
 ];
 console.log(percentages);
+
+
+const neighborsBelgium = [`France`, `Luxembourg`, `Germany`, `Holland`];
+
+neighborsBelgium.push(`Utopia`);
+console.log(neighborsBelgium);
+
+neighborsBelgium.pop();
+console.log(neighborsBelgium);
+
+neighborsBelgium[neighborsBelgium.indexOf(`Holland`)] = `Netherlands`;
+
+console.log(neighborsBelgium);
+
+
+
+const myCountry = {
+    country: `United States`,
+    capital: `Washington DC`,
+    language: `English`,
+    population: 320,
+    neighbors: [`Mexico`, `Canada`]
+
+}
+
+console.log(`The ${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries, and a capitol calles ${myCountry.capital}.`)
+
+console.log(myCountry.population-2);
+
+myCountry[`population` + 2];
+console.log(myCountry);
+
+*/

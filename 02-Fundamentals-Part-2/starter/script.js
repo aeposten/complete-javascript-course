@@ -138,7 +138,7 @@ console.log(age1, age2, age3);
 const ages = [age1, age2, age3];
 console.log(ages);
 
-*/
+
 //Add Elements
 const friends = [`Michael`, `Steven`, `Peter`];
 
@@ -159,6 +159,86 @@ console.log(friends);
 
 friends.shift();
 
+friends.push(23);
 console.log(friends);
 
 console.log(friends.indexOf(`Steven`));
+
+if (friends.includes(`Steven`)){
+    console.log(`You have a friend called Steven`)
+};
+
+const jonasArray = [
+    `Jonas`,
+    `Schmedtmann`,
+    (2037 - 1991),
+    `teacher`,
+    [`Michael`, `Peter`, `Steven`]
+
+];
+
+
+
+
+const jonas = {
+    firstName: `Jonas`,
+    lastName: `Schmedtmann`,
+    age: (2037 - 1991),
+    job: `teacher`,
+    friends: [`Michael`, `Peter`, `Steven`]
+};
+
+// console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas[`lastName`]);
+
+const nameKey = `Name`;
+console.log(jonas[`first` + nameKey]);
+console.log(jonas[`last` + nameKey]);
+
+
+// const interestedIn = prompt(`What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends.`);
+
+// console.log(jonas[interestedIn]);
+
+// if (jonas[interedtedIn]) {
+//     console.log(jonas[interestedIn])
+// } else {
+//     console.log(`Choose between firstName, lastName, age, job, and friends.`)
+// }
+
+jonas.location = `Portugal`
+jonas[`twitter`] = `@jonasschmedtman`
+
+console.log(jonas);
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}.`)
+
+*/
+
+const jonas = {
+    firstName: `Jonas`,
+    lastName: `Schmedtmann`,
+    birthYear: 1991,
+    job: `teacher`,
+    friends: [`Michael`, `Peter`, `Steven`],
+    hasDriversLicense: true,
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return (`${jonas.firstName} is a ${jonas.calcAge()} year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`)
+    }
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+
+
+console.log(`${jonas.firstName} is a ${jonas.age} year old ${jonas.job} and he has a.`)
+
+console.log(jonas.getSummary());
