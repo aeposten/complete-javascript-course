@@ -215,7 +215,7 @@ console.log(jonas);
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}.`)
 
-*/
+
 
 const jonas = {
     firstName: `Jonas`,
@@ -242,3 +242,83 @@ console.log(jonas.age);
 console.log(`${jonas.firstName} is a ${jonas.age} year old ${jonas.job} and he has a.`)
 
 console.log(jonas.getSummary());
+
+
+
+
+for (let rep = 1; rep <= 10; rep ++) {
+    console.log(`lifting weights repetition ${rep}!`)
+};
+
+
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+  ];
+
+const types = [];
+
+  for (let i = 0; i < jonasArray.length; i++) {
+      if (typeof jonasArray[i] !== `string`) continue;
+
+      types.push(jonasArray[i]);
+  }
+
+console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = []
+// for (let year = 0; year < years.length; year ++) {
+//     ages.push((2037 - years[year]));
+// }
+// console.log(ages);
+
+
+
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+  ];
+
+  for (let i = (jonas.length - 1); i >= 0; i--) {
+      console.log(jonas[i]);
+  }
+
+for (let exercise = 1; exercise <=3; exercise++) {
+    console.log(`starting exercise ${exercise}`);
+
+    for(let rep = 1; rep <6; rep++) {
+        console.log(`lifting weights repetition number ${rep}`)
+    }
+}
+
+
+
+for (let rep = 1; rep <= 10; rep ++) {
+    console.log(`lifting weights repetition ${rep}!`)
+};
+
+
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`lifting weights repetition ${rep}!`)  
+    rep++;
+}
+
+*/
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+}
